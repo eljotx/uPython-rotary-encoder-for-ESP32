@@ -26,8 +26,7 @@ The encoder can be connected to any inputs acting as "INPUT" and handling interr
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/enc11.jpg)
 
 ## Practical notes
-1. The program was tested for several encoders from two manufacturers.
-
-2. The **tic** variable allows you to change the direction of the encoder's operation. Of the two types of encoders tested, both had different mechanics and in each of them the events in channels A and B occurred in reverse.
-
-3. If the function of the axis switch should consist of a single operation while waiting for further program reaction, then you can disable the interrupt by unblocking the **#switch.irq(handler=None)** line. The program example contains the **#switch.irq(handler=switch_ch)** lines for interrupt procedures in channels A and B, binding the unblocking of the axis switch after the encoder has been activated, but these commands can be used in any other way.
+1. Since the program uses only the falling edges of signals in channels A and B, the effective resolution is twice as small as that which can be achieved for event detection for falling and rising edges of signals. However, it seems that this inconvenience is a small cost for the effect that is obtained with this method.
+2. The program was tested for several encoders from two manufacturers.
+3. The **tic** variable allows you to change the direction of the encoder's operation. Of the two types of encoders tested, both had different mechanics and in each of them the events in channels A and B occurred in reverse.
+4. If the function of the axis switch should consist of a single operation while waiting for further program reaction, then you can disable the interrupt by unblocking the **#switch.irq(handler=None)** line. The program example contains the **#switch.irq(handler=switch_ch)** lines for interrupt procedures in channels A and B, binding the unblocking of the axis switch after the encoder has been activated, but these commands can be used in any other way.
