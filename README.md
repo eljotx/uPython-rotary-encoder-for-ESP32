@@ -30,3 +30,7 @@ The encoder can be connected to any inputs acting as "INPUT" and handling interr
 2. The program was tested for several encoders from two manufacturers.
 3. The **tic** variable allows you to change the direction of the encoder's operation. Of the two types of encoders tested, both had different mechanics and in each of them the events in channels A and B occurred in reverse.
 4. If the function of the axis switch should consist of a single operation while waiting for further program reaction, then you can disable the interrupt by unblocking the **#switch.irq(handler=None)** line. The program example contains the **#switch.irq(handler=switch_ch)** lines for interrupt procedures in channels A and B, binding the unblocking of the axis switch after the encoder has been activated, but these commands can be used in any other way.
+
+## YouTube links
+In english:  https://youtu.be/tAkmGXPD3jM 
+In polish:   https://youtu.be/ZzYsIRg_OsM 
