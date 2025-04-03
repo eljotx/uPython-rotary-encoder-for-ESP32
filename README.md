@@ -33,4 +33,4 @@ The encoder can be connected to any inputs acting as "INPUT" and handling interr
 
 ## YouTube links
 In english:  https://youtu.be/tAkmGXPD3jM 
-In polish:   https://youtu.be/X2lafVfLB4U
+In polish:   https://youtu.be/GxGLLQ3V2bo 
